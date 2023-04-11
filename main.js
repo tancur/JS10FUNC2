@@ -447,8 +447,8 @@ function personForm(parent, person) {
 const parent = document.createElement("form");
 document.body.prepend(parent);
 
-const person = createPersonClosure("Ганна", "Іванова",FatherName = "Петров");
-
+const person = createPersonClosureDestruct({ name: "Миколай", age: 75,  });
 personForm(parent, person);
+
 
 
